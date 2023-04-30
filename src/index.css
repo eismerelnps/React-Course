@@ -5,9 +5,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 75px;;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.btn {
+  background-color: #ffffff;
+  border: 1px solid #ff0000;
+  border-radius: 15px;
+  color: #ff0000;
+  float: right;
+  margin: 5px; 
+  padding: 15px;
+  position: relative;
+  
+}
+.btn:hover {
+  background-color: #f55858;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  color: #fff;
+}
+.form-control {
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px;
+  width: 100%;
 }
