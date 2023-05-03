@@ -14,7 +14,7 @@ const [ show, setShow ] = useState(false)
         <button
         className='btn btn-primary'
         onClick={() => { increment(1)}}
-        >
+        > 
             +1
         </button>
 

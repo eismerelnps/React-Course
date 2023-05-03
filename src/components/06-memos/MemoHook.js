@@ -10,8 +10,7 @@ const { counter, increment} = useCounter(500);
 const [ show, setShow ] = useState(false)
 
 
-    
-   const memoHeavyProcess =  useMemo(() => heavyProcess( counter ), [counter]);
+const memoHeavyProcess =  useMemo(() => heavyProcess( counter ), [counter]);
 
   return (
     <div>
