@@ -58,10 +58,20 @@ export const TodoApp = () => {
       type: "remove",
       payload: todoId
     }
-    
+
      // sends action to useReducer
     dispatch( action );
   };
+
+
+  //set a todo as completed or incomplete
+  const handleToggle = ( todoId ) => {
+
+        dispatch({
+            type: 'toggle',
+            payload: todoId
+        })
+  }
 
 
   //jsx code of the coponent
@@ -75,7 +85,10 @@ export const TodoApp = () => {
           <ul className="list-group list-group-flush">
             {todos.map((todo, i) => (
               <li key={todo.id} className="list-group-item">
-                <p className="text-center">
+                <p 
+                className= { `${ todo.done && 'complete'}` }
+                onClick={ () => handleToggle ( todo.id )}
+                >
                   {i + 1}. {todo.desc}
                 </p>
                 <button
